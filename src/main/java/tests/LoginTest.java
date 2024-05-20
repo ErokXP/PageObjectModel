@@ -21,7 +21,7 @@ public class LoginTest extends BaseTest {
 		LoginPage login = new LoginPage(driver);
 		
 		
-		menu.navigateTo(menu.LoginLink);
+		menu.navigateTo(menu.loginLink);
 		login.loginInApp(user, pass);
 		
 		assertTrue(login.checkMsgIsDisplayed(login.successLoginMessage));
@@ -36,7 +36,7 @@ public class LoginTest extends BaseTest {
 		LoginPage login = new LoginPage(driver);
 		
 		
-		menu.navigateTo(menu.LoginLink);
+		menu.navigateTo(menu.loginLink);
 		login.loginInApp(user, "123123123");
 		assertTrue(login.checkMsgIsDisplayed(login.errorLoginMessage));
 	}
