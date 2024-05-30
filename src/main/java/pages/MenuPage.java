@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+
 public class MenuPage {
 	
 	public WebDriver driver;
@@ -30,6 +31,7 @@ public class MenuPage {
 	
 	public void navigateTo(By locator) {
 		driver.findElement(locator).click();
+		
 	}
 	//navigateTo(loginLink)
 	//navigateTo(contactsLink)
