@@ -24,8 +24,8 @@ public class ShadowDomExample extends BaseTest{
 		button.click();
 		
 		WebElement bookDayPicture = driver.findElement
-				(By.cssSelector("div[id='shadow-host']")).getShadowRoot()
-				.findElement(By.cssSelector("img[src*='www.keybooks.ro_.png']"));
+				(By.xpath("//div[@id='shadow-host']")).getShadowRoot()
+				.findElement(By.xpath("//img[contains(@src, 'www.keybooks.ro_.png')]"));
 		
 		
 		assertTrue(bookDayPicture.isDisplayed());
